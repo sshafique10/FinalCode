@@ -120,18 +120,18 @@ public class RetirementController implements Initializable {
         
         try {
             if(Double.parseDouble(txtAnnualReturnWorking.getText())<0 || Double.parseDouble(txtAnnualReturnWorking.getText())>.2) {
-            	errorMessage += "Annual Return Working must be between 0 and 0.20!\n";
+            	errorMessage += "Annual Return Working must be between 0 and 0.20.\n";
             }
         } catch (NumberFormatException e) {
-            errorMessage += "Annual Return Working must be a number!\n"; 
+            errorMessage += "Annual Return Working must be a number.\n"; 
         }
         
         try {
         	if(Double.parseDouble(txtAnnualReturnRetired.getText())<0 || Double.parseDouble(txtAnnualReturnRetired.getText())>.03) {
-            	errorMessage += "Annual Return Working must be between 0 and 0.03!\n";
+            	errorMessage += "Annual Return Working must be between 0 and 0.03.\n";
             }
         } catch (NumberFormatException e) {
-            errorMessage += "Annual Return Retired must be a number!\n"; 
+            errorMessage += "Annual Return Retired must be a number.\n"; 
         }
         
         if (errorMessage.length() == 0) {
