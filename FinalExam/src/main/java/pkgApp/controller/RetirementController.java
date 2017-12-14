@@ -16,8 +16,6 @@ import pkgApp.RetirementApp;
 import pkgCore.Retirement;
 
 
-
-
 public class RetirementController implements Initializable {
 	@FXML
 	private RetirementApp mainApp = null;
@@ -33,16 +31,22 @@ public class RetirementController implements Initializable {
 	
 	@FXML
 	private TextField txtAnnualReturnRetired;
+	
 	@FXML
 	private TextField txtRequiredIncome;
+	
 	@FXML
 	private TextField txtMonthlySSI;
+	
 	@FXML
 	private TextField txtTotalAmountSaved;
+	
 	@FXML
 	private TextField txtAmountToSave;
+	
 	@FXML
 	private Button Clear;
+	
 	@FXML
 	private Button Calculate;
 
@@ -133,14 +137,6 @@ public class RetirementController implements Initializable {
         if (errorMessage.length() == 0) {
             return true;
         } else {
-            
-            Alert alert = new Alert(AlertType.ERROR);
-           
-            alert.setTitle("Invalid Fields");
-            alert.setHeaderText("Please correct invalid fields");
-            alert.setContentText(errorMessage);
-
-            alert.showAndWait();
 
             return false;
         }
@@ -148,5 +144,3 @@ public class RetirementController implements Initializable {
 		
     }
 	
-
-}
